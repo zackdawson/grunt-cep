@@ -13,7 +13,8 @@ It is based on the `csxs` command line tool by [Creative Market](https://github.
 
 Updated in this fork: Added support for copying node modules automatically, using node_modules array in gruntfile.
 Ex.
-```release: {
+```
+release: {
 	options: {
 		profile: 'package',
 		node_modules: ["json5", "hjson"]
