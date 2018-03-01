@@ -10,6 +10,17 @@ It is based on the `csxs` command line tool by [Creative Market](https://github.
 **Please note:** the plugin is currently in alpha stage and may contain bugs. Options are not freezed and may change in future versions.
 
 ## Changelog
+
+Updated in this fork: Added support for copying node modules automatically, using node_modules array in gruntfile.
+Ex.
+```release: {
+	options: {
+		profile: 'package',
+		node_modules: ["json5", "hjson"]
+	},
+}
+```
+
 ### Latest Version
 **0.4.4**:
 
