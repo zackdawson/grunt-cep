@@ -11,6 +11,8 @@ It is based on the `csxs` command line tool by [Creative Market](https://github.
 
 ## Changelog
 
+Note: This version depends on zxp-provider 1.1.3 explicitly to work around issues introduced in 1.1.4 on osx.
+
 Updated in this fork: Added support for copying node modules automatically, using node_modules array in gruntfile.
 Ex.
 ```
