@@ -72,6 +72,25 @@ module.exports = function (grunt)
             },
 
             /**
+             * Copy node modules
+             */
+            function (callback)
+            {
+                if (build.node_modules)
+                {
+                    build.node_modules.forEach(function (module)
+                    {
+                        var message = 'Copying ' + module + '...';
+                        grunt.verbose.writeln(message).or.write(message);
+                        cep.utils.copy({ cwd: 'node_modules/' }, build.staging + '/node_modules/', module + "/**/*.*");
+                    });
+                    grunt.verbose.or.ok();
+                }
+
+                callback();
+            },
+
+            /**
              * Generate .debug file.
              */
             function (callback)
